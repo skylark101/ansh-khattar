@@ -5,6 +5,7 @@ import {
   SiNodedotjs,
   SiSpringboot,
   SiTailwindcss,
+  SiWordpress,
   SiMongodb,
   SiPostgresql,
 } from "react-icons/si";
@@ -17,7 +18,7 @@ import RadialGradientBackground from "../backgrounds/RadialGradientBackground";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
-      {/* <RadialGradientBackground variant="hero" /> */}
+      <RadialGradientBackground variant="hero" />
 
       {/*    Content Container   */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
@@ -58,18 +59,81 @@ const Hero = () => {
             <FadeIn delay={400}>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-full">
                 {STATS.map((stat, index) => (
-                  <div key={index} className="text-left border-r border-white/50 pr-10 last:border-r-0">
-                    <div className="text-2xl font-normal text-primary mb-[8px] font-mono">{stat.value}</div>
-                    <p className="text-sm text-white leading-snug">{stat.label}</p>
+                  <div
+                    key={index}
+                    className="text-left border-r border-white/50 pr-10 last:border-r-0"
+                  >
+                    <div className="text-2xl font-normal text-primary mb-[8px] font-mono">
+                      {stat.value}
+                    </div>
+                    <p className="text-sm text-white leading-snug">
+                      {stat.label}
+                    </p>
                   </div>
                 ))}
               </div>
             </FadeIn>
           </div>
-          {/*   Rgiht Column - Content  */}
+          {/*   Rgiht Column - Developer Image  */}
+          <FadeIn delay={200}>
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-[500px] ml-auto group">
+                <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                  <div className="absolute inset-[-2px] bg-linear-to-r from-primary/20 via-primary/10 to-primary animation-spin-slow rounded-2xl"></div>
+                </div>
+                {/*     Image Container     */}
+                <div className="relative rounded-2xl overflow-hidden m-[3px] h-[calc(100%-2px)]">
+                  <img
+                    src="/ansh-potrait.jpeg"
+                    alt="Developer having fun"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            {/*     Technology Logos    */}
+            <div className="relative md:absolute md:bottom-6 md:right-6 z-20 mt-6 md:mt-0">
+              <FadeIn delay={500}>
+                <div className="flex items-center gap-4 bg-white/20 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3">
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <SiReact className="w-full h-full text-white" />
+                  </div>
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <SiNodedotjs className="w-full h-full text-white" />
+                  </div>
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <FaJava className="w-full h-full text-white" />
+                  </div>
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <SiSpringboot className="w-full h-full text-white" />
+                  </div>
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <SiTailwindcss className="w-full h-full text-white" />
+                  </div>
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <SiMongodb className="w-full h-full text-white" />
+                  </div>
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <SiPostgresql className="w-full h-full text-white" />
+                  </div>
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <SiWordpress className="w-full h-full text-white" />
+                  </div>
+                </div>
+              </FadeIn>
+            </div>
+          </FadeIn>
           <div></div>
         </div>
       </div>
+
+      {/*   Scroll Indicator    */}
+      <button
+        onClick={() => scrollToSection("about")}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
+      >
+        <ChevronDown className="w-8 h-8 text-primary" />
+      </button>
     </section>
   );
 };
