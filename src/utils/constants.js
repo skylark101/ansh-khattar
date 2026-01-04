@@ -2,7 +2,7 @@ export const PERSONAL_INFO = {
   name: "Ansh Khattar",
   title: "Full Stack Developer & Technical Consultant",
   email: "hello@anshkhattar.com",
-  location: "Lucknow, UP, India",
+  location: "Lucknow, India",
   tagline:
     "Building end-to-end digital products with clean architecture, modern technologies, and a focus on long-term scalability",
   resume: "/Ansh_Khattar_Resume",
@@ -17,7 +17,7 @@ export const SOCIAL_LINKS = {
 
 export const STATS = [
   { label: "Years Experience", value: "3+" },
-  { label: "Projects Completed", value: "10+" },
+  { label: "Freelance Projects Completed", value: "10+" },
   { label: "Technologies", value: "15+" },
   { label: "Client Satisfaction", value: "98%" },
 ];
