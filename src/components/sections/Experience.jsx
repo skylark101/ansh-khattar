@@ -92,7 +92,7 @@ const Experience = () => {
             ))}
           </div>
           <div className="flex items-center justify-center gap-2 mt-6 text-white/40 text-sm">
-            <span>Scroll</span>
+            <span>Swipe</span>
             <span className="animate-pulse">→</span>
           </div>
 

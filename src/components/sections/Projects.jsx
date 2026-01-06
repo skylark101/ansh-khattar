@@ -156,6 +156,11 @@ const Projects = () => {
               </div>
             </div>
 
+            <div className="flex lg:hidden items-center justify-center gap-2 text-white/40 text-sm">
+              <span>Swipe</span>
+              <span className="animate-pulse">→</span>
+            </div>
+
             {/*    Navigation Arrows   */}
             {filteredProjects.length > 3 && (
               <>
