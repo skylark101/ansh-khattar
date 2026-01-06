@@ -149,7 +149,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
-                    placeholder="Your electronic mail address (please enter a valid one :)"
+                    placeholder="Please enter a valid one :)"
                   />
                 </div>
 
