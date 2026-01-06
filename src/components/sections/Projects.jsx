@@ -69,6 +69,11 @@ const Projects = () => {
     return 1; // mobile
   };
 
+  const getDotsCount = () => {
+    const visible = getVisibleCardsCount();
+    return Math.max(0, filteredProjects.length - visible + 1);
+  };
+
   // Category icons mapping
 
   const categoryIcons = {
@@ -213,7 +218,7 @@ const Projects = () => {
             )}
 
             {/*  Navigation Dots */}
-            {filteredProjects.length > 3 && (
+            {getDotsCount() > 1 && (
               <div className="flex items-center justify-center gap-2 mt-8">
                 {Array.from({
                   length: Math.max(0, filteredProjects.length - 2),
