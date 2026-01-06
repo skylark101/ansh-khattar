@@ -41,7 +41,7 @@ export const projects = [
     id: 4,
     title: "DigitalGrace",
     description:
-      "A strategy focused digital marketing and educational services agency based in New Delhi.",
+      "A strategy focused digital marketing and services agency based in New Delhi.",
     image: "/images/projects/digital-grace.png",
     category: "Client",
     technologies: ["WordPress"],
