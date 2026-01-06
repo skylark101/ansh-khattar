@@ -51,7 +51,9 @@ const Projects = () => {
   };
 
   const nextSlide = () => {
-    const maxIndex = Math.max(0, filteredProjects.length - 3);
+    const visibleCards = getVisibleCardsCount();
+    const maxIndex = Math.max(0, filteredProjects.length - visibleCards);
+
     const newIndex = Math.min(currentIndex + 1, maxIndex);
     scrollToIndex(newIndex);
   };
@@ -59,6 +61,12 @@ const Projects = () => {
   const prevSlide = () => {
     const newIndex = Math.max(currentIndex - 1, 0);
     scrollToIndex(newIndex);
+  };
+
+  const getVisibleCardsCount = () => {
+    if (window.innerWidth >= 1024) return 3; // lg
+    if (window.innerWidth >= 768) return 2; // md
+    return 1; // mobile
   };
 
   // Category icons mapping
@@ -97,12 +105,12 @@ const Projects = () => {
         </FadeIn>
         {/*    Category Filter     */}
         <FadeIn delay={100}>
-          <div className="flex felx-wrap justify-center gap-3 mb-16">
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => handleCategoryChange(category)}
-                className={`group relative px-6 py-3 rounded-full font-medium transition-all duration-all ${
+                className={`group relative px-6 py-3 rounded-full font-medium overflow-hidden transition-all duration-all ${
                   activeCategory === category
                     ? "text-white"
                     : "text-white/60 hover:text-white"
@@ -157,8 +165,8 @@ const Projects = () => {
                   disabled={currentIndex === 0}
                   className="
         absolute -translate-y-1/2 z-10
-        left-2 top-1/4 md:top-1/2 lg:top-1/2 md:left-4 lg:-left-12
-        flex items-center justify-center
+        left-2 top-1/2 md:left-4 lg:-left-12
+        hidden lg:flex items-center justify-center
         w-10 h-10 lg:w-12 lg:h-12
         bg-white/10 backdrop-blur-sm
         border border-white/20 rounded-full
@@ -174,11 +182,17 @@ const Projects = () => {
                 {/* Next */}
                 <button
                   onClick={nextSlide}
-                  disabled={currentIndex >= filteredProjects.length - 3}
+                  disabled={
+                    currentIndex >=
+                    Math.max(
+                      0,
+                      filteredProjects.length - getVisibleCardsCount()
+                    )
+                  }
                   className="
-        absolute top-1/4 md:top-1/2 -translate-y-1/2 z-10
+        absolute top-1/2 -translate-y-1/2 z-10
         right-2 md:right-4 lg:-right-12
-        flex items-center justify-center
+        hidden lg:flex items-center justify-center
         w-10 h-10 lg:w-12 lg:h-12
         bg-white/10 backdrop-blur-sm
         border border-white/20 rounded-full
