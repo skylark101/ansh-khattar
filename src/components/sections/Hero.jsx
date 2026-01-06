@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ChevronDown, Star } from "lucide-react";
 import {
   SiReact,
+  SiTypescript,
   SiNodedotjs,
   SiSpringboot,
   SiTailwindcss,
@@ -100,6 +101,9 @@ const Hero = () => {
                   </div>
                   <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                     <SiNodedotjs className="w-full h-full text-white" />
+                  </div>
+                  <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                    <SiTypescript className="w-full h-full text-white" />
                   </div>
                   <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
                     <FaJava className="w-full h-full text-white" />

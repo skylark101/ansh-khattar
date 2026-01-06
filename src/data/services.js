@@ -1,10 +1,10 @@
 export const services = [
   {
     id: 1,
-    icon: "HiTrendingUp",
+    icon: "TrendingUp",
     title: "Digital Growth & Online Expansion",
     description:
-      "I help businesses move online and scale effectively by defining the right technical strategy, building reliable systems, and optimizing digital channels to drive consistent sales growth.",
+      "I help personal brands, businesses, and e-commerce ventures build a strong online presence from the ground up. From clean, high-converting websites to backend-driven platforms, I design and develop reliable digital systems. My focus is on clarity, performance, and scalability, ensuring products work smoothly as they grow. Every project is built with real users, real business goals, and long-term sustainability in mind.",
   },
 
   {
@@ -20,7 +20,7 @@ export const services = [
     icon: "Smartphone",
     title: "Mobile-First Responsive Design",
     description:
-      "Mobile-first by default, I build responsive interfaces that scale gracefully from small screens to large displays without sacrificing usability.",
+      "Mobile-first by default, I create responsive interfaces that scale gracefully from small screens to large displays without sacrificing usability.",
   },
 
   {
