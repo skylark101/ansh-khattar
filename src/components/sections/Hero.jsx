@@ -62,7 +62,7 @@ const Hero = () => {
                 {STATS.map((stat, index) => (
                   <div
                     key={index}
-                    className="text-left border-r border-white/50 pr-10 last:border-r-0"
+                    className="text-left  border-r border-white/50 pr-10 even:border-r-0 lg:even:border-r lg:last:border-r-0"
                   >
                     <div className="text-2xl font-normal text-primary mb-[8px] font-mono">
                       {stat.value}

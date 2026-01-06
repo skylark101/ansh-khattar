@@ -28,20 +28,26 @@ const Projects = () => {
     setCurrentIndex(0);
 
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollTo({ left: 0, behaviour: "smooth" });
+      scrollContainerRef.current.scrollTo({ left: 0, behavior: "smooth" });
     }
   };
 
   const scrollToIndex = (index) => {
     setCurrentIndex(index);
-    if (scrollContainerRef.current) {
-      const container = scrollContainerRef.current;
-      const cardWidth = container.offsetWidth / 3;
-      container.scrollTo({
-        left: cardWidth * index,
-        behaviour: "smooth",
-      });
-    }
+
+    if (!scrollContainerRef.current) return;
+
+    const container = scrollContainerRef.current;
+    const isMobile = window.innerWidth < 1024;
+
+    const cardWidth = isMobile
+      ? container.offsetWidth // 1 card
+      : container.offsetWidth / 3; // 3 cards on desktop
+
+    container.scrollTo({
+      left: cardWidth * index,
+      behavior: "smooth",
+    });
   };
 
   const nextSlide = () => {
@@ -76,7 +82,9 @@ const Projects = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
               <Briefcase className="w-4 h-4 text-primary" />
-              <span className="text-lg text-primary font-medium tracking-wider uppercase">My Work</span>
+              <span className="text-lg text-primary font-medium tracking-wider uppercase">
+                My Work
+              </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4">
               Featured Projects
@@ -148,8 +156,8 @@ const Projects = () => {
                   onClick={prevSlide}
                   disabled={currentIndex === 0}
                   className="
-        absolute top-1/2 -translate-y-1/2 z-10
-        left-2 md:left-4 lg:-left-12
+        absolute -translate-y-1/2 z-10
+        left-2 top-1/4 md:top-1/2 lg:top-1/2 md:left-4 lg:-left-12
         flex items-center justify-center
         w-10 h-10 lg:w-12 lg:h-12
         bg-white/10 backdrop-blur-sm
@@ -168,7 +176,7 @@ const Projects = () => {
                   onClick={nextSlide}
                   disabled={currentIndex >= filteredProjects.length - 3}
                   className="
-        absolute top-1/2 -translate-y-1/2 z-10
+        absolute top-1/4 md:top-1/2 -translate-y-1/2 z-10
         right-2 md:right-4 lg:-right-12
         flex items-center justify-center
         w-10 h-10 lg:w-12 lg:h-12

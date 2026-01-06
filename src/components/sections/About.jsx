@@ -73,7 +73,7 @@ const About = () => {
               </FadeIn>
             </div>
             <FadeIn delay={300}>
-              <div className="grid grid-cols-3 gap-8">
+              <div className="grid grid-cols-3 gap-8 ml-3 lg:ml-0">
                 {ABOUT_STATS.map((stat, index) => (
                   <div key={index} className="relative">
                     <div className="absolute -left-4 top-0 w-1 h-full bg-linear-to-b from-primary via-primary/50 to-primary/20 rounded-full"></div>
@@ -89,13 +89,15 @@ const About = () => {
             </FadeIn>
 
             <FadeIn delay={400}>
-              <button
-                onClick={() => window.open(PERSONAL_INFO.resume, "_blank")}
-                className="inline-flex items-center gap-3 bg-white hover:bg-white/80 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
-              >
-                <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
-                Download Resume
-              </button>
+              <div className="flex justify-center lg:justify-start">
+                <button
+                  onClick={() => window.open(PERSONAL_INFO.resume, "_blank")}
+                  className="inline-flex items-center gap-3 bg-white hover:bg-white/80 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
+                >
+                  <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
+                  Download Resume
+                </button>
+              </div>
             </FadeIn>
           </div>
 
