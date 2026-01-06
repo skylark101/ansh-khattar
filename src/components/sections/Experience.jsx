@@ -39,7 +39,6 @@ const Experience = () => {
         <div className="relative">
           {/* Fade edges to hint horizontal scroll */}
 
-
           <div className="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide">
             {experiences.map((item, index) => (
               <FadeIn key={item.id} delay={100 + index * 100}>
@@ -95,9 +94,6 @@ const Experience = () => {
             <span>Swipe</span>
             <span className="animate-pulse">→</span>
           </div>
-
-          {/* Timeline line */}
-          <div className="absolute left-0 right-0 h-px bg-white/15 -z-10" />
         </div>
       </div>
     </section>
