@@ -43,7 +43,7 @@ GitHub: https://github.com/skylark101
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React.js
