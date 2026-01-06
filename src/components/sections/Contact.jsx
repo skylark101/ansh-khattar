@@ -10,6 +10,12 @@ import {
 } from "lucide-react";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "../../utils/constants";
 import FadeIn from "../animations/FadeIn";
+import emailjs from "@emailjs/browser";
+
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -26,8 +32,10 @@ const Contact = () => {
     });
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
+
+    // validation
     if (!formData.name || !formData.email || !formData.message) {
       setStatus({
         type: "error",
@@ -45,13 +53,35 @@ const Contact = () => {
       return;
     }
 
-    setStatus({
-      type: "success",
-      message: "Wow, that was smooth. Now let me get back to you soon.",
-    });
-    setFormData({ name: "", email: "", message: "" });
-    setTimeout(() => setStatus({ type: "", message: "" }), 5000);
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+
+      setStatus({
+        type: "success",
+        message: "Wow, that was smooth. Now let me get back to you soon.",
+      });
+
+      setFormData({ name: "", email: "", message: "" });
+
+      setTimeout(() => setStatus({ type: "", message: "" }), 5000);
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setStatus({
+        type: "error",
+        message: "Oops! Something went wrong. Try again in a bit.",
+      });
+    }
   };
+
   const socialIcons = {
     github: Github,
     linkedin: Linkedin,

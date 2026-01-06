@@ -21,7 +21,7 @@ export const projects = [
     category: "Personal",
     technologies: ["Vanilla JavaScript"],
     tags: ["Ad-Free", "Movie Search", "Smart Recommendations"],
-    demoUrl: "https://su.anshkhattar.com/",
+    demoUrl: "https://skylark101.github.io/MovieMinion/",
     githubUrl: "https://github.com/skylark101/MovieMinion",
   },
 
@@ -33,7 +33,7 @@ export const projects = [
     category: "Personal",
     technologies: ["Vanilla JavaScript"],
     tags: ["Casual Game", "Interactive", "Slow Motion"],
-    demoUrl: "https://su.anshkhattar.com/",
+    demoUrl: "https://skylark101.github.io/CubeNinja/",
     githubUrl: "https://github.com/skylark101/CubeNinja",
   },
 

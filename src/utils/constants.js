@@ -16,7 +16,7 @@ export const PERSONAL_INFO = {
 export const SOCIAL_LINKS = {
   github: "https://github.com/skylark101",
   linkedin: "https://www.linkedin.com/in/ansh-khattar-b3077918b/",
-  twitter: " https://x.com/khattar_ansh",
+  twitter: "https://x.com/khattar_ansh",
   mail: "mailto:hello@anshkhattar.com",
 };
 
@@ -36,6 +36,7 @@ export const ABOUT_STATS = [
 export const NAV_LINKS = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
+  { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects & Work Samples" },
   { id: "services", label: "Services" },
   { id: "contact", label: "Contact" },
