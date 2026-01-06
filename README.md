@@ -1,4 +1,4 @@
-# 🚀 Ansh Khattar — Developer Portfolio
+# Ansh Khattar — Developer Portfolio
 
 This repository contains the source code for my personal developer portfolio, built to showcase my professional experience, projects, and technical skill set.
 
@@ -6,21 +6,21 @@ The portfolio is designed with a strong focus on **clarity, performance, and rea
 
 ---
 
-## 👋 About Me
+## About Me
 
 I’m **Ansh Khattar**, a **Full-Stack Software Engineer** with 3+ years of experience building and shipping production-grade systems using **Java / Spring Boot**, **React**, and **Node.js**.
 
 I’ve worked on scalable backend services supporting thousands of users, real-time event-driven systems processing millions of events daily, and full-stack platforms with a strong emphasis on performance, reliability, and maintainability.
 
-📍 Location: Lucknow, India  
-🌍 Portfolio: [https://anshkhattar.com](https://anshkhattar.com)  
-📧 Email: hello@anshkhattar.com  
-💼 LinkedIn: https://www.linkedin.com/in/ansh-khattar-b3077918b/  
-🐙 GitHub: https://github.com/skylark101  
+Location: Lucknow, India  
+Portfolio: [https://anshkhattar.com](https://anshkhattar.com)  
+Email: hello@anshkhattar.com  
+LinkedIn: https://www.linkedin.com/in/ansh-khattar-b3077918b/  
+GitHub: https://github.com/skylark101  
 
 ---
 
-## 🧠 What This Portfolio Showcases
+## What This Portfolio Showcases
 
 - **Professional Experience**  
   Horizontal timeline highlighting my roles at companies like **Lidamus** and **Tekion Corp**, including measurable business and technical impact.
@@ -80,7 +80,7 @@ I’ve worked on scalable backend services supporting thousands of users, real-t
 
 ---
 
-## 📌 Notable Experience Highlights
+## Notable Experience Highlights
 
 ### **Lidamus — Full Stack Software Engineer (Remote)**
 - Built a **multi-tenant invoice management platform** with RBAC and cloud storage, reducing invoice processing time by **~45%**.
