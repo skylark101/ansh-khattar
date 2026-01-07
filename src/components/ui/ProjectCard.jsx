@@ -50,7 +50,7 @@ const ProjectCard = ({ project }) => {
           <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-[#af69ff] transition-colors duration-300">
             {title}
           </h3>
-          <p className="text-white/60 text-sm leading-relaxed lg:line-clamp-2">{description}</p>
+          <p className="text-white/60 text-sm leading-relaxed">{description}</p>
         </div>
 
         <div className="flex flex-wrap gap-2">
