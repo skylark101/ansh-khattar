@@ -63,7 +63,7 @@ export default function NavBar() {
               onClick={() => handleNavClick("contact")}
               className="px-7 py-3.5 bg-white text-[#212121] font-medium text-based rounded-[17px] border border-white hover:bg-white/90 transition-all duration-300"
             >
-              Hire Me
+              Let's Talk
             </button>
           </div>
 
