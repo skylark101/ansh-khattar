@@ -150,8 +150,7 @@ const About = () => {
                     Performance
                   </h3>
                   <p className="text-base text-white/70 leading-relaxed">
-                    I build reliable solutions with efficiency in mind, keeping experiences fast
-                    and dependable.
+                    I build efficient, reliable solutions that stay fast, scalable, and easy to maintain.
                   </p>
                 </div>
               </div>
