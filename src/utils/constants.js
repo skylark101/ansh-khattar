@@ -17,6 +17,7 @@ export const SOCIAL_LINKS = {
   github: "https://github.com/skylark101",
   linkedin: "https://www.linkedin.com/in/ansh-khattar-b3077918b/",
   twitter: "https://x.com/khattar_ansh",
+  topmate: "https://topmate.io/ansh_khattar/",
   mail: "mailto:hello@anshkhattar.com",
 };
 

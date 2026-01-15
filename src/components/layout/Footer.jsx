@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Twitter, Mail, MapPin, Heart } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, Handshake, MapPin, Heart } from "lucide-react";
 import { PERSONAL_INFO, SOCIAL_LINKS, NAV_LINKS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
 import FadeIn from "../animations/FadeIn";
@@ -8,6 +8,7 @@ const Footer = () => {
     github: Github,
     linkedin: Linkedin,
     twitter: Twitter,
+    topmate: Handshake
   };
 
   return (

@@ -5,6 +5,7 @@ import {
   Github,
   Linkedin,
   Twitter,
+  Handshake,
   Send,
   MessageSquare,
 } from "lucide-react";
@@ -91,6 +92,7 @@ const Contact = () => {
     github: Github,
     linkedin: Linkedin,
     twitter: Twitter,
+    topmate: Handshake,
   };
 
   return (
@@ -255,7 +257,7 @@ const Contact = () => {
                 <p className="text-lg text-white/60 mb-4">Connect with me</p>
                 <div className="flex gap-4">
                   {Object.entries(SOCIAL_LINKS)
-                    .slice(0, 3)
+                    .slice(0, 4)
                     .map(([platform, url]) => {
                       const Icon = socialIcons[platform];
 
