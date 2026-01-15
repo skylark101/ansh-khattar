@@ -9,14 +9,7 @@ const Footer = () => {
     linkedin: Linkedin,
     twitter: Twitter,
   };
-  const trackSocialClick = (platform, location = "unknown") => {
-    if (window.umami) {
-      window.umami.track("Social Click", {
-        platform,
-        location,
-      });
-    }
-  };
+
   return (
     <footer className="relative bg-black overflow-hidden border-t border-white/10">
       <div className="absolute inset-0 overflow-hidden">
@@ -98,18 +91,10 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Connect on ${platform}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        if (window.umami) {
-                          window.umami.track("Social Click", {
-                            platform,
-                            location: "footer",
-                          });
-                        }
-                        setTimeout(() => {
-                          window.open(url, "_blank", "noopener,noreferrer");
-                        }, 120);
-                      }}
+                      // Umami events
+                      data-umami-event="Social Click"
+                      data-umami-event-platform={platform}
+                      data-umami-event-location="footer"
                       className="relative p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 group"
                     >
                       <Icon className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors duration-300" />
