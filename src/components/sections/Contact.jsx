@@ -279,7 +279,7 @@ const Contact = () => {
                             if (window.umami) {
                               window.umami.track("Social Click", {
                                 platform,
-                                location: "footer",
+                                location: "contact",
                               });
                             }
                             setTimeout(() => {
