@@ -60,7 +60,15 @@ export default function NavBar() {
           {/* CTA Button  */}
           <div className="hidden md:flex items-center gap-2">
             <button
-              onClick={() => handleNavClick("contact")}
+              onClick={() => {
+                if (window.umami) {
+                  window.umami.track("Contact Click", {
+                    location: "secondary_cta",
+                  });
+                }
+
+                handleNavClick("contact");
+              }}
               className="px-7 py-3.5 bg-white text-[#212121] font-medium text-based rounded-[17px] border border-white hover:bg-white/90 transition-all duration-300"
             >
               Contact Me
@@ -104,10 +112,19 @@ export default function NavBar() {
             </button>
           ))}
           <button
-            onClick={() => handleNavClick("contact")}
+            onClick={() => {
+              // Track intent
+              if (window.umami) {
+                window.umami.track("Contact Click", {
+                  location: "cta_section",
+                });
+              }
+
+              handleNavClick("contact");
+            }}
             className="w-full px-7 py-3.5 bg-white text-[#212121] font-medium text-base rounded-[17px] border border-white hover:bg-white/90 transition-all duration-300 mt-2"
           >
-            Hire Me
+            Contact Me
           </button>
         </div>
       </div>

@@ -9,8 +9,10 @@ import Testimonials from "./components/sections/Testimonials";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
 import Experience from "./components/sections/Experience";
+import useScrollTracking from "./hooks/useScrollTracking";
 
 function App() {
+  useScrollTracking();
   return (
     <div className="min-h-screen bg-black">
       <NavBar />

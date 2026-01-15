@@ -64,7 +64,12 @@ const Contact = () => {
         },
         EMAILJS_PUBLIC_KEY
       );
-
+      //  TRACK ONLY ON SUCCESS
+      if (window.umami) {
+        window.umami.track("Contact Submit", {
+          method: "emailjs",
+        });
+      }
       setStatus({
         type: "success",
         message: "Wow, that was smooth. Now let me get back to you soon.",

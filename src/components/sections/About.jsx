@@ -91,7 +91,19 @@ const About = () => {
             <FadeIn delay={400}>
               <div className="flex justify-center lg:justify-start">
                 <button
-                  onClick={() => window.open(PERSONAL_INFO.resume, "_blank")}
+                  onClick={() => {
+                    if (window.umami) {
+                      window.umami.track("Resume Download", {
+                        location: "hero_section",
+                        file: "resume",
+                      });
+                    }
+
+                    // small delay so event gets sent before new tab opens
+                    setTimeout(() => {
+                      window.open(PERSONAL_INFO.resume, "_blank");
+                    }, 120);
+                  }}
                   className="inline-flex items-center gap-3 bg-white hover:bg-white/80 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
                 >
                   <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
@@ -150,7 +162,8 @@ const About = () => {
                     Performance
                   </h3>
                   <p className="text-base text-white/70 leading-relaxed">
-                    I create efficient, reliable solutions that stay fast, scalable, and easy to maintain.
+                    I create efficient, reliable solutions that stay fast,
+                    scalable, and easy to maintain.
                   </p>
                 </div>
               </div>
