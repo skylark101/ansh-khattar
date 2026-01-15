@@ -92,6 +92,16 @@ const Contact = () => {
     linkedin: Linkedin,
     twitter: Twitter,
   };
+
+  const trackSocialClick = (platform, location = "unknown") => {
+    if (window.umami) {
+      window.umami.track("Social Click", {
+        platform,
+        location,
+      });
+    }
+  };
+
   return (
     <section className="relative py-20 bg-black overflow-hidden" id="contact">
       <div className="absolute inset-0 overflow-hidden">
@@ -264,6 +274,9 @@ const Contact = () => {
                           href={url}
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={() =>
+                            trackSocialClick(platform, "contact_section")
+                          }
                           className="p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 group"
                         >
                           <Icon className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors" />

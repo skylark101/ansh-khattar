@@ -9,6 +9,14 @@ const Footer = () => {
     linkedin: Linkedin,
     twitter: Twitter,
   };
+  const trackSocialClick = (platform, location = "unknown") => {
+    if (window.umami) {
+      window.umami.track("Social Click", {
+        platform,
+        location,
+      });
+    }
+  };
   return (
     <footer className="relative bg-black overflow-hidden border-t border-white/10">
       <div className="absolute inset-0 overflow-hidden">
@@ -54,7 +62,9 @@ const Footer = () => {
 
           <FadeIn delay={100}>
             <div>
-              <h4 className="text-white font-semibold mb-6 text-lg">Quick Links</h4>
+              <h4 className="text-white font-semibold mb-6 text-lg">
+                Quick Links
+              </h4>
               <ul className="space-y-3">
                 {NAV_LINKS.map((link) => (
                   <li key={link.id}>
@@ -72,7 +82,9 @@ const Footer = () => {
           </FadeIn>
           <FadeIn delay={200}>
             <div>
-              <h4 className="text-white font-semibold mb-6 text-lg">Connect With Me</h4>
+              <h4 className="text-white font-semibold mb-6 text-lg">
+                Connect With Me
+              </h4>
               <p className="text-white/60 text-sm mb-6 leading-relaxed">
                 Let's connect and create something amazing together
               </p>
@@ -86,6 +98,9 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Connect on ${platform}`}
+                      onClick={() =>
+                        trackSocialClick(platform, "contact_section")
+                      }
                       className="relative p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 group"
                     >
                       <Icon className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors duration-300" />
