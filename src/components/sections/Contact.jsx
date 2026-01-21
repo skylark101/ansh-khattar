@@ -4,6 +4,7 @@ import {
   MapPin,
   Github,
   Linkedin,
+  CalendarDays,
   Twitter,
   Handshake,
   Send,
@@ -92,6 +93,7 @@ const Contact = () => {
     github: Github,
     linkedin: Linkedin,
     twitter: Twitter,
+    calendly: CalendarDays,
     topmate: Handshake,
   };
 
@@ -257,7 +259,7 @@ const Contact = () => {
                 <p className="text-lg text-white/60 mb-4">Connect with me</p>
                 <div className="flex gap-4">
                   {Object.entries(SOCIAL_LINKS)
-                    .slice(0, 4)
+                    .slice(0, 5)
                     .map(([platform, url]) => {
                       const Icon = socialIcons[platform];
 

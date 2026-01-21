@@ -18,6 +18,7 @@ export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/ansh-khattar-b3077918b/",
   twitter: "https://x.com/khattar_ansh",
   topmate: "https://topmate.io/ansh_khattar/",
+  calendly: "https://calendly.com/anshkhattar10/30min",
   mail: "mailto:hello@anshkhattar.com",
 };
 
