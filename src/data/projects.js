@@ -65,7 +65,7 @@ export const projects = [
     id: 6,
     title: "MovieMinion",
     description:
-      "A Free Movie search destination that provides downloadable torrent files without ads. Also provides a randomiser that suggests good movies based on the selected genre.",
+      "A Free Movie search destination that provides downloadable torrent files along with english subtitles, all without ads. Also provides a randomiser that suggests good movies based on the selected genre.",
     image: "/images/projects/movieMinion.png",
     category: "Personal",
     technologies: ["Vanilla JavaScript"],
