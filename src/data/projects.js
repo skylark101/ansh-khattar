@@ -70,7 +70,7 @@ export const projects = [
     category: "Personal",
     technologies: ["Vanilla JavaScript"],
     tags: ["Ad-Free", "Movie Search", "Smart Recommendations"],
-    demoUrl: "https://skylark101.github.io/MovieMinion/",
+    demoUrl: "https://movie.anshkhattar.com/",
     githubUrl: "https://github.com/skylark101/MovieMinion",
   },
 
