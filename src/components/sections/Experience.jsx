@@ -4,6 +4,54 @@ import FadeIn from "../animations/FadeIn";
 import { Briefcase, GraduationCap } from "lucide-react";
 
 const Experience = () => {
+
+  const getDuration = (period, fallbackDuration) => {
+  if (!/present/i.test(period)) return fallbackDuration;
+
+  const startPart = period.split('-')[0].trim(); // "Jun 2025"
+
+  // Month map
+  const monthMap = {
+    jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
+    jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11
+  };
+
+  const parts = startPart.split(' '); // ["Jun", "2025"]
+  let startMonth = 0;
+  let startYear;
+
+  if (parts.length === 2) {
+    startMonth = monthMap[parts[0].toLowerCase()];
+    startYear = parseInt(parts[1], 10);
+  } else {
+    // fallback: "2025 - Present"
+    startYear = parseInt(startPart, 10);
+  }
+
+  if (isNaN(startYear)) return fallbackDuration;
+
+  const startDate = new Date(startYear, startMonth, 1);
+  const now = new Date();
+
+  let totalMonths =
+    (now.getFullYear() - startDate.getFullYear()) * 12 +
+    (now.getMonth() - startDate.getMonth());
+
+  if (totalMonths < 0) totalMonths = 0;
+
+  if (totalMonths < 12) {
+    return `${totalMonths} months`;
+  }
+
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  return months === 0
+    ? `${years} yrs`
+    : `${years} yrs ${months} months`;
+};
+
+
   return (
     <section
       id="experience"
@@ -54,9 +102,14 @@ const Experience = () => {
                       {item.title}
                     </h3>
                     <p className="text-primary mt-1">{item.subtitle}</p>
-                    <span className="text-sm text-white/50 mt-2 block">
-                      {item.period}
-                    </span>
+                    <div className="flex">
+                      <span className="text-sm text-white/50 mt-2 block">
+                        {item.period}
+                      </span>
+                      <span className="text-sm text-white/50 block mt-2 ml-auto">
+                        {item.duration}
+                      </span>
+                    </div>
                   </div>
                 ) : (
                   // 💼 Experience Card
@@ -76,10 +129,14 @@ const Experience = () => {
                     <p className="text-primary font-medium mb-2">
                       {item.company}
                     </p>
-                    <span className="text-sm text-white/50 block mb-4">
-                      {item.period}
-                    </span>
-
+                    <div className="flex">
+                      <span className="text-sm text-white/50 block mb-4">
+                        {item.period}
+                      </span>
+                      <span className="text-sm text-white/50 block mb-4 ml-auto">
+                        <span>{getDuration(item.period, item.duration)}</span>
+                      </span>
+                    </div>
                     <ul className="list-disc list-inside space-y-2 text-white/70 text-sm">
                       {item.description.map((point, i) => (
                         <li key={i}>{point}</li>
