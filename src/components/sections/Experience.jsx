@@ -2,56 +2,11 @@ import React from "react";
 import { experiences } from "../../data/experience";
 import FadeIn from "../animations/FadeIn";
 import { Briefcase, GraduationCap } from "lucide-react";
-
+import { getDurationFromPeriod } from "../../utils/utility";
 const Experience = () => {
-
-  const getDuration = (period, fallbackDuration) => {
-  if (!/present/i.test(period)) return fallbackDuration;
-
-  const startPart = period.split('-')[0].trim(); // "Jun 2025"
-
-  // Month map
-  const monthMap = {
-    jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
-    jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11
+  const getCareerDuration = () => {
+    return getDurationFromPeriod("Jan 2023 - Present");
   };
-
-  const parts = startPart.split(' '); // ["Jun", "2025"]
-  let startMonth = 0;
-  let startYear;
-
-  if (parts.length === 2) {
-    startMonth = monthMap[parts[0].toLowerCase()];
-    startYear = parseInt(parts[1], 10);
-  } else {
-    // fallback: "2025 - Present"
-    startYear = parseInt(startPart, 10);
-  }
-
-  if (isNaN(startYear)) return fallbackDuration;
-
-  const startDate = new Date(startYear, startMonth, 1);
-  const now = new Date();
-
-  let totalMonths =
-    (now.getFullYear() - startDate.getFullYear()) * 12 +
-    (now.getMonth() - startDate.getMonth());
-
-  if (totalMonths < 0) totalMonths = 0;
-
-  if (totalMonths < 12) {
-    return `${totalMonths} months`;
-  }
-
-  const years = Math.floor(totalMonths / 12);
-  const months = totalMonths % 12;
-
-  return months === 0
-    ? `${years} yrs`
-    : `${years} yrs ${months} months`;
-};
-
-
   return (
     <section
       id="experience"
@@ -80,6 +35,12 @@ const Experience = () => {
             <p className="text-white/60 max-w-2xl mx-auto">
               A horizontal snapshot of my professional journey so far.
             </p>
+
+            <p className="text-white/60 max-w-2xl mx-auto text-xl mt-2">
+              Solving real problems with code for{" "}
+              <span className="text-white ">{getCareerDuration()}</span> - and
+              counting.
+            </p>
           </div>
         </FadeIn>
 
@@ -107,7 +68,7 @@ const Experience = () => {
                         {item.period}
                       </span>
                       <span className="text-sm text-white/50 block mt-2 ml-auto">
-                        {item.duration}
+                        {getDurationFromPeriod(item.period)}
                       </span>
                     </div>
                   </div>
@@ -134,7 +95,7 @@ const Experience = () => {
                         {item.period}
                       </span>
                       <span className="text-sm text-white/50 block mb-4 ml-auto">
-                        <span>{getDuration(item.period, item.duration)}</span>
+                        {getDurationFromPeriod(item.period)}
                       </span>
                     </div>
                     <ul className="list-disc list-inside space-y-2 text-white/70 text-sm">

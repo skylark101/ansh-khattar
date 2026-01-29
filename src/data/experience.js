@@ -2,7 +2,6 @@ export const experiences = [
   {
     id: "lidamus",
     type: "experience",
-    duration: "",
     company: "Lidamus",
     isCurrent: true,
     role: "Full Stack Software Developer",
@@ -17,10 +16,9 @@ export const experiences = [
   {
     id: "tekion",
     type: "experience",
-    duration: "2.5 yrs",
     company: "Tekion Corp",
     role: "Backend Developer",
-    period: "Jan 2023 - May 2025",
+    period: "Jan 2023 - Jul 2025",
     description: [
       "Improved CI/CD pipelines with automated versioning and quality gates, reducing release failures by ~30%.",
       "Designed cluster-separated chat services to meet OEM compliance, improving backend reliability by ~25%.",
@@ -32,16 +30,14 @@ export const experiences = [
   {
     id: "graduation",
     type: "milestone",
-    duration: "4 years",
     title: "Undergraduate",
     subtitle: "Bachelor's Degree in Computer Science - VIT University, India",
-    period: "2019 - 2023",
+    period: "Jul 2019 - Jun 2023",
   },
 
   {
     id: "thirsty-sea",
     type: "experience",
-    duration: "3 months",
     company: "Thirsty Sea Limited",
     role: "Web Developer",
     period: "Oct 2022 - Dec 2022",
@@ -54,7 +50,6 @@ export const experiences = [
   {
     id: "yogdhara",
     type: "experience",
-    duration: "3 months",
     company: "Yogdhara",
     role: "Web Developer",
     period: "Oct 2022 - Dec 2022",
@@ -68,7 +63,6 @@ export const experiences = [
   {
     id: "thetrycycle",
     type: "experience",
-    duration: "2 months",
     company: "TheTryCycle",
     role: "Web Developer Intern",
     period: "Nov 2021 - Dec 2021",
@@ -81,10 +75,9 @@ export const experiences = [
   {
     id: "creative11",
     type: "experience",
-    duration: "4 months",
     company: "Creative11",
     role: "Web Developer Intern",
-    period: "Sept 2021 - Dec 2021",
+    period: "Sep 2021 - Dec 2021",
     description: [
       "Worked on various WordPress based websites ranging from brand sites to personal portfolios.",
       "Learned and improved at WordPress and created fully custom UI components as per the requirements.",
