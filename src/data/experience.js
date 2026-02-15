@@ -2,6 +2,7 @@ export const experiences = [
   {
     id: "praxis",
     type: "experience",
+    location:"Remote - Dubai, UAE",
     company: "Praxis Cons. - Sutherland",
     isCurrent: true,
     role: "Software Developer",
@@ -13,6 +14,7 @@ export const experiences = [
   {
     id: "lidamus",
     type: "experience",
+    location:"Remote - Portugal",
     company: "Lidamus",
     role: "Full Stack Software Developer",
     period: "Jun 2025 - Jan 2026",
@@ -26,6 +28,7 @@ export const experiences = [
   {
     id: "tekion",
     type: "experience",
+    location:"Onsite - Bengaluru, IN",
     company: "Tekion Corp",
     role: "Backend Developer",
     period: "Jan 2023 - Jul 2025",
@@ -48,6 +51,7 @@ export const experiences = [
   {
     id: "thirsty-sea",
     type: "experience",
+    location:"Remote - London, UK",
     company: "Thirsty Sea Limited",
     role: "Web Developer",
     period: "Oct 2022 - Dec 2022",
@@ -60,6 +64,7 @@ export const experiences = [
   {
     id: "yogdhara",
     type: "experience",
+    location:"Remote - Delhi, IN",
     company: "Yogdhara",
     role: "Web Developer",
     period: "Oct 2022 - Dec 2022",
@@ -73,6 +78,7 @@ export const experiences = [
   {
     id: "thetrycycle",
     type: "experience",
+    location:"Remote - Bengaluru, IN",
     company: "TheTryCycle",
     role: "Web Developer Intern",
     period: "Nov 2021 - Dec 2021",
@@ -85,6 +91,7 @@ export const experiences = [
   {
     id: "creative11",
     type: "experience",
+    location:"Remote - Bengaluru, IN",
     company: "Creative11",
     role: "Web Developer Intern",
     period: "Sep 2021 - Dec 2021",

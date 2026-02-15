@@ -90,6 +90,9 @@ const Experience = () => {
                     <p className="text-primary font-medium mb-2">
                       {item.company}
                     </p>
+                    <p className="text-white/80 text-sm font-medium mb-2">
+                      {item.location}
+                    </p>
                     <div className="flex">
                       <span className="text-sm text-white/50 block mb-4">
                         {item.period}
