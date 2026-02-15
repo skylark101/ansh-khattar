@@ -2,7 +2,7 @@ export const experiences = [
   {
     id: "praxis",
     type: "experience",
-    company: "Praxis - Sutherland",
+    company: "Praxis Cons. - Sutherland",
     isCurrent: true,
     role: "Software Developer",
     period: "Feb 2026 - Present",
@@ -15,7 +15,7 @@ export const experiences = [
     type: "experience",
     company: "Lidamus",
     role: "Full Stack Software Developer",
-    period: "Jun 2025 - Jan 2025",
+    period: "Jun 2025 - Jan 2026",
     description: [
       "Built a multi-tenant invoice platform with RBAC and secure cloud storage, cutting invoice processing time by ~45%.",
       "Implemented a real-time payout system processing millions of chat events daily across multiple agencies.",
