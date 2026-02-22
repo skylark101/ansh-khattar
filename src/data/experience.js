@@ -5,7 +5,7 @@ export const experiences = [
     location:"Remote - Dubai, UAE",
     company: "Sutherland",
     isCurrent: true,
-    role: "Software Developer",
+    role: "Senior Software Developer",
     period: "Feb 2026 - Present",
     description: [
       ],
