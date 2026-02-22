@@ -1,15 +1,15 @@
 export const experiences = [
-  // {
-  //   id: "praxis",
-  //   type: "experience",
-  //   location:"Remote - Dubai, UAE",
-  //   company: "Praxis Cons. - Sutherland",
-  //   isCurrent: true,
-  //   role: "Software Developer",
-  //   period: "Feb 2026 - Present",
-  //   description: [
-  //     ],
-  // },
+  {
+    id: "praxis",
+    type: "experience",
+    location:"Remote - Dubai, UAE",
+    company: "Sutherland",
+    isCurrent: true,
+    role: "Software Developer",
+    period: "Feb 2026 - Present",
+    description: [
+      ],
+  },
 
   {
     id: "lidamus",
@@ -17,7 +17,7 @@ export const experiences = [
     location:"Remote - Portugal",
     company: "Lidamus",
     role: "Full Stack Software Developer",
-    period: "Jun 2025 - Present",
+    period: "Jun 2025 - Jan 2026",
     description: [
       "Built a multi-tenant invoice platform with RBAC and secure cloud storage, cutting invoice processing time by ~45%.",
       "Implemented a real-time payout system processing millions of chat events daily across multiple agencies.",
