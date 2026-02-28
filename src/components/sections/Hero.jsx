@@ -78,7 +78,7 @@ const Hero = () => {
           {/*   Rgiht Column - Developer Image  */}
           <FadeIn delay={200}>
             <div className="relative">
-              <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-[500px] ml-auto group">
+              <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-[400px] ml-auto group">
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
                   <div className="absolute inset-[-2px] bg-linear-to-r from-primary/20 via-primary/10 to-primary animation-spin-slow rounded-2xl"></div>
                 </div>
