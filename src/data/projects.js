@@ -6,7 +6,7 @@ export const projects = [
       "A professional, clean website built for a legal services firm to showcase its offerings, build trust, and make it easy for clients to connect.",
     image: "/images/projects/gsb-legal.png",
     category: "Client",
-    technologies: ["WordPress"],
+    technologies: ["ReactJs", "TailwindCSS"],
     tags: ["Personal Brand", "Legal Services", "Trust-Focused"],
     demoUrl: "https://gsblegalworks.com",
     githubUrl: "",
