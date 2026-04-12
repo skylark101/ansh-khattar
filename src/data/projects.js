@@ -1,6 +1,31 @@
 export const projects = [
   {
     id: 1,
+    title: "NoDash",
+    description:
+      "A focused SaaS dashboard for professionals managing recurring client work. Automates task scheduling, tracks upcoming and overdue events, and delivers timely reminders so nothing slips through the cracks.",
+    image: "/images/projects/nodash.png",
+    category: "Personal",
+    technologies: [
+      "React",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+    ],
+    tags: [
+      "SaaS",
+      "Automation",
+      "Productivity",
+      "Full Stack",
+      "Recurring Workflows",
+    ],
+    demoUrl: "https://nodash.anshkhattar.com",
+    githubUrl: "https://github.com/skylark101/NoDash",
+  },
+  {
+    id: 2,
     title: "GSBLegalWorks",
     description:
       "A professional, clean website built for a legal services firm to showcase its offerings, build trust, and make it easy for clients to connect.",
@@ -12,7 +37,7 @@ export const projects = [
     githubUrl: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "My Juice Box",
     description:
       "A clean, modern website designed for a fresh juice & café brand, focused on visual appeal, clarity, and easy customer engagement.",
@@ -24,7 +49,7 @@ export const projects = [
     githubUrl: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "DigitalGrace",
     description:
       "A strategy focused digital marketing and services agency based in New Delhi.",
@@ -37,7 +62,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "DMCTechs",
     description:
       "A backend-heavy ERP platform built for a business to automate employee management, leave tracking, and project workflows through a centralized system.",
@@ -49,7 +74,7 @@ export const projects = [
     githubUrl: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "URL Shortener + QR Generator",
     description:
       "A Free React + Node based URL Shortener that shortens the url and also provides a unique QR Code without an expiry.",
@@ -62,7 +87,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "MovieMinion",
     description:
       "A free, ad-free movie discovery platform offering downloadable torrents with English subtitles. Includes a smart randomiser that recommends quality movies based on your chosen genre.",
@@ -75,7 +100,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Cube Ninja",
     description: "A lovely cube slicing game with supercool slomo feature",
     image: "/images/projects/cube-ninja.png",
