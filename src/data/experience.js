@@ -2,19 +2,23 @@ export const experiences = [
   {
     id: "praxis",
     type: "experience",
-    location:"Remote - Dubai, UAE",
+    location: "Remote - Dubai, UAE",
     company: "Sutherland",
     isCurrent: true,
     role: "Senior Software Developer",
     period: "Feb 2026 - Present",
     description: [
-      ],
+      "Built backend services using Java / Spring Boot within a microservices architecture for large-scale systems.",
+      "Designed and optimized PostgreSQL schemas, improving performance and reliability.",
+      "Collaborated with frontend and product teams to deliver end-to-end features.",
+      "Debugged production issues and improved system stability across services.",
+    ],
   },
 
   {
     id: "lidamus",
     type: "experience",
-    location:"Remote - Portugal",
+    location: "Remote - Portugal",
     company: "Lidamus",
     role: "Full Stack Software Developer",
     period: "Jun 2025 - Oct 2025",
@@ -28,7 +32,7 @@ export const experiences = [
   {
     id: "tekion",
     type: "experience",
-    location:"Onsite - Bengaluru, IN",
+    location: "Onsite - Bengaluru, IN",
     company: "Tekion Corp",
     role: "Backend Developer",
     period: "Jan 2023 - Jul 2025",
@@ -51,7 +55,7 @@ export const experiences = [
   {
     id: "thirsty-sea",
     type: "experience",
-    location:"Remote - London, UK",
+    location: "Remote - London, UK",
     company: "Thirsty Sea Limited",
     role: "Web Developer",
     period: "Oct 2022 - Dec 2022",
@@ -64,7 +68,7 @@ export const experiences = [
   {
     id: "yogdhara",
     type: "experience",
-    location:"Remote - Delhi, IN",
+    location: "Remote - Delhi, IN",
     company: "Yogdhara",
     role: "Web Developer",
     period: "Oct 2022 - Dec 2022",
@@ -78,7 +82,7 @@ export const experiences = [
   {
     id: "thetrycycle",
     type: "experience",
-    location:"Remote - Bengaluru, IN",
+    location: "Remote - Bengaluru, IN",
     company: "TheTryCycle",
     role: "Web Developer Intern",
     period: "Nov 2021 - Dec 2021",
@@ -91,7 +95,7 @@ export const experiences = [
   {
     id: "creative11",
     type: "experience",
-    location:"Remote - Bengaluru, IN",
+    location: "Remote - Bengaluru, IN",
     company: "Creative11",
     role: "Web Developer Intern",
     period: "Sep 2021 - Dec 2021",
