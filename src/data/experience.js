@@ -3,7 +3,7 @@ export const experiences = [
     id: "praxis",
     type: "experience",
     location: "Remote - Dubai, UAE",
-    company: "Sutherland",
+    company: "Sutherland Global",
     isCurrent: true,
     role: "Senior Software Developer",
     period: "Feb 2026 - Present",
