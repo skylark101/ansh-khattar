@@ -8,10 +8,10 @@ export const experiences = [
     role: "Senior Software Developer",
     period: "Feb 2026 - Present",
     description: [
-      "Built backend services using Java / Spring Boot within a microservices architecture for large-scale systems.",
-      "Designed and optimized PostgreSQL schemas, improving performance and reliability.",
-      "Collaborated with frontend and product teams to deliver end-to-end features.",
-      "Debugged production issues and improved system stability across services.",
+      "Architected and deployed scalable backend services within a high-traffic microservices environment, ensuring seamless system interoperability.",
+      "Engineered and optimized relational database schemas to handle complex transactional data, significantly improving query performance and system reliability.",
+      "Led end-to-end feature delivery by bridging the gap between frontend interfaces and core product requirements.",
+      "Resolved critical production bottlenecks and implemented proactive monitoring to enhance overall system stability.",
     ],
   },
 
