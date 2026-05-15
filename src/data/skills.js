@@ -39,30 +39,30 @@ export const skills = [
   // Backend & APIs
   {
     id: 6,
-    name: "Java",
-    icon: "FaJava",
-    level: "Advanced",
-    experience: "3+ years",
-  },
-  {
-    id: 7,
-    name: "Spring Boot",
-    icon: "SiSpringboot",
-    level: "Advanced",
-    experience: "3+ years",
-  },
-  {
-    id: 8,
     name: "Node.js",
     icon: "FaNodeJs",
     level: "Advanced",
     experience: "3+ years",
   },
   {
-    id: 9,
+    id: 7,
     name: "Express.js",
     icon: "SiExpress",
-    level: "Intermediate",
+    level: "Advanced",
+    experience: "3+ years",
+  },
+  {
+    id: 8,
+    name: "Java",
+    icon: "FaJava",
+    level: "Advanced",
+    experience: "3+ years",
+  },
+  {
+    id: 9,
+    name: "Spring Boot",
+    icon: "SiSpringboot",
+    level: "Advanced",
     experience: "3+ years",
   },
   {
