@@ -5,7 +5,7 @@ export const skills = [
     name: "React.js",
     icon: "FaReact",
     level: "Advanced",
-    experience: "2+ years",
+    experience: "3+ years",
   },
   {
     id: 2,
@@ -19,14 +19,14 @@ export const skills = [
     name: "TypeScript",
     icon: "SiTypescript",
     level: "Intermediate",
-    experience: "2+ years",
+    experience: "3+ years",
   },
   {
     id: 4,
     name: "Tailwind CSS",
     icon: "SiTailwindcss",
     level: "Advanced",
-    experience: "1.5+ years",
+    experience: "2+ years",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const skills = [
     name: "Java",
     icon: "FaJava",
     level: "Advanced",
-    experience: "4+ years",
+    experience: "3+ years",
   },
   {
     id: 7,
@@ -56,14 +56,14 @@ export const skills = [
     name: "Node.js",
     icon: "FaNodeJs",
     level: "Advanced",
-    experience: "2+ years",
+    experience: "3+ years",
   },
   {
     id: 9,
     name: "Express.js",
     icon: "SiExpress",
     level: "Intermediate",
-    experience: "2+ years",
+    experience: "3+ years",
   },
   {
     id: 10,
@@ -93,14 +93,14 @@ export const skills = [
     name: "Redis",
     icon: "SiRedis",
     level: "Intermediate",
-    experience: "1.5+ years",
+    experience: "2+ years",
   },
   {
     id: 14,
     name: "Kafka",
     icon: "SiApachekafka",
     level: "Intermediate",
-    experience: "1.5+ years",
+    experience: "2+ years",
   },
 
   // DevOps & Cloud
@@ -116,7 +116,7 @@ export const skills = [
     name: "AWS",
     icon: "FaAws",
     level: "Intermediate",
-    experience: "1+ years",
+    experience: "2+ years",
   },
   {
     id: 17,
@@ -139,7 +139,7 @@ export const skills = [
     name: "Pusher",
     icon: "FaBolt",
     level: "Intermediate",
-    experience: "1.5+ years",
+    experience: "2+ years",
   },
 
   // Tools & Platforms
@@ -155,7 +155,7 @@ export const skills = [
     name: "Vite",
     icon: "SiVite",
     level: "Intermediate",
-    experience: "1+ years",
+    experience: "2+ years",
   },
   {
     id: 22,
