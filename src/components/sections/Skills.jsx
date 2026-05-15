@@ -15,10 +15,10 @@ const Skills = () => {
     ].filter(Boolean),
 
     "Backend & APIs": [
-      skills.find((s) => s.name === "Java"),
-      skills.find((s) => s.name === "Spring Boot"),
       skills.find((s) => s.name === "Node.js"),
       skills.find((s) => s.name === "Express.js"),
+      skills.find((s) => s.name === "Java"),
+      skills.find((s) => s.name === "Spring Boot"),
       skills.find((s) => s.name === "Microservices"),
     ].filter(Boolean),
 
@@ -131,7 +131,7 @@ const Skills = () => {
                             </div>
                             <span
                               className={`text-xs px-2 py-1 rounded-full border ${getLevelColor(
-                                skill.level
+                                skill.level,
                               )}`}
                             >
                               {skill.level}
@@ -153,7 +153,7 @@ const Skills = () => {
                   <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-primary/10 group-hover:from-primary/5 group-hover:to-primary/15 rounded-2xl transition-all duration-300 pointer-events-none"></div>
                 </div>
               </FadeIn>
-            )
+            ),
           )}
         </div>
       </div>
