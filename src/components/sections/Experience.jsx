@@ -5,7 +5,7 @@ import { Briefcase, GraduationCap } from "lucide-react";
 import { getDurationFromPeriod } from "../../utils/utility";
 const Experience = () => {
   const getCareerDuration = () => {
-    return getDurationFromPeriod("Jan 2023 - Present");
+    return getDurationFromPeriod("Jan 2022 - Present");
   };
   return (
     <section
